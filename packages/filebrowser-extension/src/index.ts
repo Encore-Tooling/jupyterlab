@@ -1020,9 +1020,9 @@ function addCommands(
 
   commands.addCommand(CommandIDs.openPath, {
     label: args =>
-      args.path ? trans.__('Open %1', args.path) : trans.__('Open from Path…'),
+      args.path ? trans.__('Open %1', args.path) : trans.__('xxx Open from Path…'),
     caption: args =>
-      args.path ? trans.__('Open %1', args.path) : trans.__('Open from path'),
+      args.path ? trans.__('Open %1', args.path) : trans.__('yyy Open from path'),
     execute: async args => {
       let path: string | undefined;
       if (args?.path) {
